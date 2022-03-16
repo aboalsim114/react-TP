@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-image: url(https://www.wallpapertip.com/wmimgs/142-1422949_lava-lamp-iphone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+form {
+  margin: 100px;
+  width: 60rem;
+  height: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type='text'] {
+  width: 99%;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
+input[type='submit'] {
+  width: 50%;
+  padding: 7px;
+  border-radius: 99px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: medium;
+  color: beige;
+}
+
+input[type='submit']:hover {
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+
+main {
+  border: 3px solid black;
+  width: 60rem;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.Card {
+  border: 1px solid black;
+  width: 25rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.Deletebtn {
+  width: 99%;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  float: right;
+  color: aliceblue;
+  background-color: rgb(236, 99, 99);
+  cursor: pointer;
+}
