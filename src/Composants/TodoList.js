@@ -8,6 +8,7 @@ export default function TodoList() {
   const id = 1; // card id
   const handleSubmit = (e) => {
     e.preventDefault();
+
     setData((previous) => [
       { id: id, titre: titre, content: content },
       ...previous,
@@ -16,12 +17,15 @@ export default function TodoList() {
       throw new Error('veuillez remplir vos champs avant de continuer '); // si les champs inputs sont vides cava generer une error
 
     setShow(true); // on passe le Show state a true pour afficher les cards
+    console.log(data);
   };
 
-  const handleDelete = () => {
+  const handleDelete = (e) => {
     // supprimer un element du state by ID
+
     setData((item) => item.filter((_, item) => item !== id - 1));
     data === '' ? setShow(false) : null;
+    alert(`cette article a été supprimer `);
   };
 
   return (
